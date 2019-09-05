@@ -13,7 +13,6 @@ function App() {
         <Counter />
         
         <Counter />
-
       </header>
     </div>
   );

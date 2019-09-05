@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { INCREMENT } from '../constants/actionTypes';
-import { useContextState } from '../context/CounterContext';
+import { useContextState } from '../contexts/CounterContext';
 
 export default function IncrementButton(){
-    const [{count}, dispatch] = useContextState();
+    const [, dispatch] = useContextState();
 
     return (
         <button onClick={() => dispatch({type: INCREMENT})}>Increment</button>

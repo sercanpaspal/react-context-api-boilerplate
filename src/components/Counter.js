@@ -3,10 +3,10 @@ import React from 'react';
 import IncrementButton from './IncrementButton';
 import DecrementButton from './DecrementButton';
 
-import { useContextState } from '../context/CounterContext';
+import { useContextState } from '../contexts/CounterContext';
 
 export default function Counter(){
-    const [state, dispatch] = useContextState();
+    const [state] = useContextState();
 
     return (
         <div>

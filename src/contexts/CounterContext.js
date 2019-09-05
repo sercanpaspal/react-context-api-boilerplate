@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useReducer } from 'react';
+import React, { createContext, useContext } from 'react';
+
+import { useMiddlewareReducer } from '../hooks';
 
 import counterReducer from '../reducers/counter';
 
@@ -8,7 +10,7 @@ export const CounterContext = createContext();
 
 export default function CounterProvider({children}){
     return (
-        <CounterContext.Provider value={useReducer(counterReducer, initialState)}>
+        <CounterContext.Provider value={useMiddlewareReducer(counterReducer, initialState)}>
             {children}
         </CounterContext.Provider>
     )
