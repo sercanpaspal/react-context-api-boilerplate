@@ -1,33 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
-import LocalCounter from './components/LocalCounter';
-import Counter from './components/Counter';
-import ToggleThemeButton from './components/ToggleThemeButton';
+import Home from './components/Home';
+import About from './components/About';
 
-import { useStore } from './store';
+import Layout from './components/Layout';
 
 function App() {
-  const { theme } = useStore();
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <h2>{theme.state ? 'Light' : 'Dark'}</h2>
-
-        <ToggleThemeButton />
-
-        <Counter />
-        
-        <Counter />
-
-        <LocalCounter />
-      </header>
-    </div>
-  );
+    return (
+        <div className="app">
+            <Layout>
+                <Switch>
+                    <Route exact path="/" component={Home}></Route>
+                    <Route path="/about" component={About}></Route>
+                </Switch>
+            </Layout>
+        </div>
+    );
 }
 
 export default App;

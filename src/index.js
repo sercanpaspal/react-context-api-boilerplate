@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Provider from './store';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render((
     <Provider>
-        <App />
+        <Router>
+            <Switch>
+                <Route path="/" component={App} />
+            </Switch>
+        </Router>
     </Provider>
 ), document.getElementById('root'));
 
