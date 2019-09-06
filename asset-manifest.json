@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/react-context-api-boilerplate/static/css/main.8b405afe.chunk.css",
-    "main.js": "/react-context-api-boilerplate/static/js/main.3854afe7.chunk.js",
-    "main.js.map": "/react-context-api-boilerplate/static/js/main.3854afe7.chunk.js.map",
+    "main.css": "/react-context-api-boilerplate/static/css/main.d52e5918.chunk.css",
+    "main.js": "/react-context-api-boilerplate/static/js/main.ed810073.chunk.js",
+    "main.js.map": "/react-context-api-boilerplate/static/js/main.ed810073.chunk.js.map",
     "runtime~main.js": "/react-context-api-boilerplate/static/js/runtime~main.3d3bcebc.js",
     "runtime~main.js.map": "/react-context-api-boilerplate/static/js/runtime~main.3d3bcebc.js.map",
-    "static/js/2.1042c426.chunk.js": "/react-context-api-boilerplate/static/js/2.1042c426.chunk.js",
-    "static/js/2.1042c426.chunk.js.map": "/react-context-api-boilerplate/static/js/2.1042c426.chunk.js.map",
+    "static/js/2.d8279419.chunk.js": "/react-context-api-boilerplate/static/js/2.d8279419.chunk.js",
+    "static/js/2.d8279419.chunk.js.map": "/react-context-api-boilerplate/static/js/2.d8279419.chunk.js.map",
     "index.html": "/react-context-api-boilerplate/index.html",
-    "precache-manifest.9e1970ad4a5c3b7accc4c529a7459aef.js": "/react-context-api-boilerplate/precache-manifest.9e1970ad4a5c3b7accc4c529a7459aef.js",
+    "precache-manifest.bc2fff240c981285b7e175544823aa9e.js": "/react-context-api-boilerplate/precache-manifest.bc2fff240c981285b7e175544823aa9e.js",
     "service-worker.js": "/react-context-api-boilerplate/service-worker.js",
-    "static/css/main.8b405afe.chunk.css.map": "/react-context-api-boilerplate/static/css/main.8b405afe.chunk.css.map",
-    "static/media/logo.svg": "/react-context-api-boilerplate/static/media/logo.5d5d9eef.svg"
+    "static/css/main.d52e5918.chunk.css.map": "/react-context-api-boilerplate/static/css/main.d52e5918.chunk.css.map"
   }
 }
