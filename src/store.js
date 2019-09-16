@@ -6,16 +6,13 @@ import reducer from './reducer';
 
 export const Context = createContext();
 
-export default function Provider({children}){
-    const value = Object.assign({}, ...Object.keys(reducer).map(k => ({[k]: useReducer.apply(null, reducer[k])})));
+const combinedReducers = (state = {}, action = {}) => Object.assign({}, ...Object.keys(reducer).map(k => ({[k]: reducer[k](state[k], action)})));
 
-    Object.keys(value).forEach(vKey => {
-        let [state, dispatch] = value[vKey];
-        value[vKey] = {state, dispatch: applyMiddleware(dispatch)}
-    });
+export default function Provider({children}){
+    const [state, dispatch] = useReducer(combinedReducers, combinedReducers({}));
 
     return (
-        <Context.Provider value={value}>
+        <Context.Provider value={[state, applyMiddleware(dispatch)]}>
             {children}
         </Context.Provider>
     )

@@ -1,3 +1,3 @@
 export const applyMiddleware = dispatch => action => {
-    dispatch(action)
+    dispatch(action);
 };

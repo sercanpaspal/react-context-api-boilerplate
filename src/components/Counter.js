@@ -4,15 +4,15 @@ import { INCREMENT, DECREMENT } from '../constants/actionTypes';
 import { useStore } from '../store';
 
 export default function Counter(){
-    const { counter } = useStore();
+    const [state, dispatch] = useStore();
 
     return (
         <div>
             <h2>Global Counter</h2>
-            <h3>{counter.state}</h3>
+            <h3>{state.counter}</h3>
 
-            <button onClick={() => counter.dispatch({type: INCREMENT})}>Increment</button>
-            <button onClick={() => counter.dispatch({type: DECREMENT})}>Decrement</button>
+            <button onClick={() => dispatch({type: INCREMENT})}>Increment</button>
+            <button onClick={() => dispatch({type: DECREMENT})}>Decrement</button>
         </div>
     );
 }
